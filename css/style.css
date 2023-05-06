@@ -1,0 +1,420 @@
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #4CAF50;
+	color: white;
+	padding: 20px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.animals {
+	margin: 40px;
+}
+
+.animals h2 {
+	color: #4CAF50;
+}
+
+.animal-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+}
+
+.animal-card {
+	background-color: white;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	padding: 20px;
+}
+
+.animal-card img {
+	max-width: 100%;
+}
+
+.animal-card h3 {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.animal-card p {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+.form {
+	margin: 40px;
+}
+
+.form h2 {
+	color: #4CAF50;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form input, .form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+.form textarea {
+	height: 100px;
+}
+
+.form button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form button:hover {
+	background-color: #3e8e41;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  width: 300%;
+}
+
+.slide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+
+
+
+
+
+.hero {
+	position: relative; /* to make sure the overlay is positioned relative to this container */
+	height: 400px; /* adjust the height as needed */
+	background-image: url('https://static.fundacion-affinity.org/cdn/farfuture/wfzHUAPksUOWePuvajegv_W_DwdxDophyz5qyiV1EiY/mtime:1528830294/sites/default/files/la-adopcion-una-nueva-oportunidad-a-las-mascotas-abandonadas.jpg');
+	background-size: cover;
+	background-size: cover; /* to cover the whole container with the background image */
+	background-position: center; /* to center the background image */
+  }
+  
+  .hero-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5); /* semi-transparent black */
+  }
+  
+  .hero-content {
+	position: absolute;
+	top: 50%; /* to center the content vertically */
+	left: 50%; /* to center the content horizontally */
+	transform: translate(-50%, -50%); /* to center the content both horizontally and vertically */
+	text-align: center; /* to center the text */
+	color: #fff; /* to make the text white */
+  }
+  
+  .hero-content h1 {
+	font-size: 3rem; /* adjust the font size as needed */
+	font-weight: bold; /* to make the title bold */
+  }
+  
+  .hero-content h2 {
+	font-size: 2rem; /* adjust the font size as needed */
+	font-weight: normal; /* to make the subtitle normal weight */
+	margin-top: 1rem; /* add some margin between the title and subtitle */
+  }
+
+
+
+
+
+
+
+/* Adoption form button styles */
+.adoption-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+  }
+  .adoption-button button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 12px 24px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+  }
+  
+  /* Adoption form overlay styles */
+  .adoption-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 9998;
+  }
+  .adoption-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	width: 400px;
+	text-align: center;
+  }
+  
+  .close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+	cursor: pointer;
+  }
+
+
+
+
+
+  form {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	margin: 0 auto;
+  }
+  
+  label {
+	margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 5px;
+	background-color: #eaf2e3; /* light green */
+	color: #333;
+  }
+  
+  select {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 5px;
+	background-color: #eaf2e3; /* light green */
+	color: #333;
+  }
+  
+  button[type="submit"] {
+	background-color: #68b36b; /* dark green */
+	border: none;
+	color: white;
+	padding: 12px 24px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #5ba462; /* slightly lighter green */
+  }
+
+
+
+
+
+  footer {
+	background-color: #6cb64d;
+	padding: 20px;
+	font-size: 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+  }
+  
+  .footer-info p {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	text-align: left;
+  }
+  
+  .motivation-text {
+	font-weight: bold;
+	font-size: 20px;
+  }
+  
+  .footer-links ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  }
+  
+  .footer-links li {
+	margin: 0 10px;
+  }
+  
+  .footer-links a {
+	color: white;
+	text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+	color: #f2f2f2;
+  }
+  
+  .footer-copy p {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	text-align: center;
+  }
+  
+
+
+
+
+
+
+  header {
+	background-color: #6cb64d;
+	padding: 20px;
+	font-size: 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+  }
+  
+  .logo img {
+	height: 50px;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  }
+  
+  nav li {
+	margin: 0 10px;
+  }
+  
+  nav a {
+	color: white;
+	text-decoration: none;
+  }
+  
+  nav a:hover {
+	color: #f2f2f2;
+  }
+
+
+  
+
+  
