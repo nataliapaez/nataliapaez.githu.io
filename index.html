@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Animal Adoption Page</title>
+	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -9,120 +9,168 @@
 		
 		<nav>
 		  <ul>
-			<li><a href="#">Home</a></li>
+			<li><a href="#home-section">Inicio</a></li>
+			<li><a href="#tips-section">Tips</a></li>
+			
 		  </ul>
 		</nav>
 	  </header>
 
-	<section class="hero">
-		<div class="hero-overlay"></div> <!-- Superposición semitransparente para oscurecer la imagen de fondo -->
+	  <main>
+
+		<section id="home-section">
+			<section class="hero">
+				<div class="hero-overlay"></div> <!-- Superposición semitransparente para oscurecer la imagen de fondo -->
+				
+				<div class="hero-content">
+				  <h1>La mejor experiencia en adopcion animal.</h1>
+				  <h2>Nos encargamos de encontrar hogares al siguiente nivel.</h2>
+				  <button id="adoption-form-btn">Adoptar Ahora</button>
+				</div>
 		
-		<div class="hero-content">
-		  <h1>La mejor experiencia en adopcion animal.</h1>
-		  <h2>Nos encargamos de encontrar hogares al siguiente nivel.</h2>
-		  <button id="adoption-form-btn">Adoptar Ahora</button>
-		</div>
-
-		<!-- Botón Formulario de adopción -->
-
-  
-  <!-- Superposición de formularios de adopción -->
-  <div class="adoption-overlay" id="adoption-overlay">
-	<div class="adoption-form">
-	  <button class="close-btn" id="close-btn">&times;</button>
-	  <h2>Formulario de adopcion</h2>
-	  <form>
-		<label for="name">Nombre:</label>
-		<input type="text" id="name" name="name" required>
-	  
-		<label for="email">Correo:</label>
-		<input type="email" id="email" name="email" required>
-	  
-		<label for="phone">Telefono:</label>
-		<input type="tel" id="phone" name="phone" required>
-	  
-		<label for="address">Direccion:</label>
-		<textarea id="address" name="address" required></textarea>
-	  
-		<label for="pet-type">Tipo de animal:</label>
-		<select id="pet-type" name="pet-type" required>
-		  <option value="">Selecciona el tipo</option>
-		  <option value="Dog">Perro</option>
-		</select>
-	  
-		<label for="pet-name">Nombre del animal:</label>
-		<input type="text" id="pet-name" name="pet-name" required>
-	  
-		<label for="pet-age">Edad del animal:</label>
-		<input type="number" id="pet-age" name="pet-age" required>
-	  
-		<button type="submit">Enviar</button>
-	  </form>
-	</div>
-  </div>
-	  </section>
-
+				<!-- Botón Formulario de adopción -->
+		
+		  
+		  <!-- Superposición de formularios de adopción -->
+		  <div class="adoption-overlay" id="adoption-overlay">
+			<div class="adoption-form">
+			  <button class="close-btn" id="close-btn">&times;</button>
+			  <h2>Formulario de adopcion</h2>
+			  <form>
+				<label for="name">Nombre:</label>
+				<input type="text" id="name" name="name" required>
+			  
+				<label for="email">Correo:</label>
+				<input type="email" id="email" name="email" required>
+			  
+				<label for="phone">Telefono:</label>
+				<input type="tel" id="phone" name="phone" required>
+			  
+				<label for="address">Direccion:</label>
+				<textarea id="address" name="address" required></textarea>
+			  
+				<label for="pet-type">Tipo de animal:</label>
+				<select id="pet-type" name="pet-type" required>
+				  <option value="">Selecciona el tipo</option>
+				  <option value="Dog">Perro</option>
+				</select>
+			  
+				<label for="pet-name">Nombre del animal:</label>
+				<input type="text" id="pet-name" name="pet-name" required>
+			  
+				<label for="pet-age">Edad del animal:</label>
+				<input type="number" id="pet-age" name="pet-age" required>
+			  
+				<button type="submit">Enviar</button>
+			  </form>
+			</div>
+		  </div>
+			  </section>
+			  
+			<section class="animals">
+				<h2>Animales disponibles para adopción</h2>
+				<div class="animal-grid">
+					<div class="animal-card">
+						<img src="img/ado1.jpeg" alt="Dog 1">
+						<h3>TOKIO</h3>
+						<p>Aactivo y cariñoso.</p>
+						<p>Edad: 4 años.</p>
+					
+					</div>
+					<div class="animal-card">
+						<img src="img/ado2.PNG" alt="Cat 1">
+						<h3>ROCKY BAR</h3>
+						<p>Es activo, sociable y amistoso.</p>
+						<p>Edad: 5 años.</p>
+						
+					</div>
+					<div class="animal-card">
+						<img src="img/ado3.jpeg" alt="Rabbit 1">
+						<h3>FRODO</h3>
+						<p>Activo, requiere experiencia previa con raza de manejo especial.</p>
+						<p>Edad: 8 años.</p>
+						
+					</div>
+					<div class="animal-card">
+						<img src="img/ado4.jpeg" alt="Rabbit 1">
+						<h3>AURELIO AURELIANO</h3>
+						<p>Amistoso y grande.</p>
+						<p>Edad: 3 años</p>
+					
+					</div>
+					<div class="animal-card">
+						<img src="img/ado5.jpg" alt="Rabbit 1">
+						<h3>DEKKO</h3>
+						<p>Es activo, sociable y amistoso.</p>
+						<p>Edad: 5 años.</p>
+						
+					</div>
+					<div class="animal-card">
+						<img src="img/ado6.jpg" alt="Rabbit 1">
+						<h3>REY</h3>
+						<p>Activo, requiere experiencia previa con raza de manejo especial.</p>
+						<p>Edad: 8 años.</p>
+					</div>
+					<div class="animal-card">
+						<img src="img/ado7.jpg" alt="Rabbit 1">
+						<h3>MATIAS</h3>
+						<p>Es activo, sociable y amistoso.</p>
+						<p>Edad: 5 años.</p>
+					</div>
+					<div class="animal-card">
+						<img src="img/ado8.jpg" alt="Rabbit 1">
+						<h3>LINDA</h3>
+						<p>Activo, requiere experiencia previa con raza de manejo especial.</p>
+						<p>Edad: 8 años.</p>
+					</div>
+				</div>
+			</section>
 	
+			<section class="tips-section"id="tips-section">
+				<h2>Tips que te pueden ayudar</h2>
 
-	  
-	<section class="animals">
-		<h2>Animales disponibles para adopción</h2>
-		<div class="animal-grid">
-			<div class="animal-card">
-				<img src="img/ado1.jpeg" alt="Dog 1">
-				<h3>TOKIO</h3>
-				<p>Aactivo y cariñoso.</p>
-				<p>Edad: 4 años.</p>
-			
-			</div>
-			<div class="animal-card">
-				<img src="img/ado2.PNG" alt="Cat 1">
-				<h3>ROCKY BAR</h3>
-				<p>Es activo, sociable y amistoso.</p>
-				<p>Edad: 5 años.</p>
-				
-			</div>
-			<div class="animal-card">
-				<img src="img/ado3.jpeg" alt="Rabbit 1">
-				<h3>FRODO</h3>
-				<p>Activo, requiere experiencia previa con raza de manejo especial.</p>
-				<p>Edad: 8 años.</p>
-				
-			</div>
-			<div class="animal-card">
-				<img src="img/ado4.jpeg" alt="Rabbit 1">
-				<h3>AURELIO AURELIANO</h3>
-				<p>Amistoso y grande.</p>
-				<p>Edad: 3 años</p>
-			
-			</div>
-			<div class="animal-card">
-				<img src="img/ado5.jpg" alt="Rabbit 1">
-				<h3>DEKKO</h3>
-				<p>Es activo, sociable y amistoso.</p>
-				<p>Edad: 5 años.</p>
-				
-			</div>
-			<div class="animal-card">
-				<img src="img/ado6.jpg" alt="Rabbit 1">
-				<h3>REY</h3>
-				<p>Activo, requiere experiencia previa con raza de manejo especial.</p>
-				<p>Edad: 8 años.</p>
-			</div>
-			<div class="animal-card">
-				<img src="img/ado7.jpg" alt="Rabbit 1">
-				<h3>MATIAS</h3>
-				<p>Es activo, sociable y amistoso.</p>
-				<p>Edad: 5 años.</p>
-			</div>
-			<div class="animal-card">
-				<img src="img/ado8.jpg" alt="Rabbit 1">
-				<h3>LINDA</h3>
-				<p>Activo, requiere experiencia previa con raza de manejo especial.</p>
-				<p>Edad: 8 años.</p>
-			</div>
-		</div>
-	</section>
+				<div class="tip-list">
+				  <div class="tip">
+					<div class="tip-image">
+					  <img src="img/img9.jpeg"alt="Tip 1 Image">
+					</div>
+					<div class="tip-info">
+					  <div class="tip-title">¿Cómo limpiar el pelo de mi perro en mi casa?</div>
+					  <div class="tip-description">
+						<p>Cuando tomamos la decisión de tener una mascota una de las cuestiones más importantes es la de elegir el tipo de animal que queremos y que podremos cuidar. La mayoría de las personas prefieren un perro, son adorables, son una excelente compañía, juguetones y leales. Sin embargo con el tiempo, vamos notando que tienen un pequeño problema.</p>
+						<p>Los perros por lo general sueltan mucho pelo, aspecto que es totalmente normal como sucede con los humanos, no obstante limpiarlo se vuelve una tarea difícil cuando los encontramos los pelos adheridos en la ropa, en la cama, en los muebles, las alfombras, etc.</p>  
+					</div>
+					</div>
+				  </div>
+			  
+				  <div class="tip">
+					<div class="tip-image">
+					  <img src="img/img10.png" alt="Tip 2 Image">
+					</div>
+					<div class="tip-info">
+					  <div class="tip-title">¿Cómo eliminar las pulgas en las mascotas?</div>
+					  <div class="tip-description">
+						<p>Si hay unos parásitos que realmente molesten a las mascotas y a sus cuidadores son las pulgas. Se multiplican con un asombrosa rapidez, y pasan de un animal a otro casi sin esfuerzo. Aunque les encanta la calor, la realidad es que en climas templados es cada vez más fácil verlas hasta el otoño.</p>
+						<p>Para evitar que tu amigo tenga que lidiar con ellas, te diremos cómo eliminar las pulgas en las mascotas y cómo evitar que vuelvan a aparecer.</p>
+					</div>
+					</div>
+				  </div>
+				  
+				<div class="tip">
+					<div class="tip-image">
+					  <img src="img/img11.jpg" alt="Tip 1 Image">
+					</div>
+					<div class="tip-info">
+					  <div class="tip-title">A qué edad iniciar la educación de tu perro</div>
+					  <div class="tip-description">
+						<p>Al tener un can debemos satisfacer todas sus necesidades básicas, pero hay algo que muchas veces pasamos por alto: su educación. Los problemas de comportamiento pueden ser evitados y tratados cuando se presentan. Desde el primer día que tenemos un perro en casa, hay que comenzar a educarlo. Se le debe enseñar cómo queremos que se comporte, pues no nacen sabiendo y probablemente algo que les resulta normal, para nosotros puede ser inadecuado. Además, ellos no hablan nuestro idioma, por lo que debemos preocuparnos de que aprendan de buena manera qué significa lo que les decimos, generando una buena comunicación.</p>
+						<p>Aquí es donde el adiestramiento con refuerzo positivo juega un rol fundamental, ya que es la mejor herramienta para lograrlo.</p>  
+					</div>
+					</div>
+				  </div>
+				</div>
+			</section>
+	  </main>
 
 	<script src="js/main.js"></script>
 </body>

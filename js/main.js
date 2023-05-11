@@ -13,7 +13,7 @@ closeBtn.addEventListener("click", () => {
   adoptionOverlay.style.display = "none";
 });
 
-// Agregar detector de eventos a la superposición para ocultarlo si se hace clic fuera del formulario
+// Adicion detector de eventos a la superposición para ocultarlo si se hace clic fuera del formulario
 adoptionOverlay.addEventListener("click", (event) => {
   if (event.target === adoptionOverlay) {
     adoptionOverlay.style.display = "none";
@@ -65,12 +65,37 @@ aboutUsLink.addEventListener('click', (event) => {
   console.log(`Clicked ${aboutUsLink.textContent}`);
 });
 
-// Add click event listener to "Tips" link
+// Agregar detector de eventos de clic al enlace "Tips"
 const tipsLink = document.querySelector('nav a[href="#"][target="_blank"]');
 tipsLink.addEventListener('click', (event) => {
   event.preventDefault();
   // Manejo evento de clic aquí
   console.log(`Clicked ${tipsLink.textContent}`);
   window.open('https://example.com/pet-care-tips', '_blank');
+});
+
+
+
+
+// Desplazamiento suave
+$('a[href^="#"]').on('click', function(event) {
+  var target = $(this.getAttribute('href'));
+  if (target.length) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+          scrollTop: target.offset().top
+      }, 1000);
+  }
+});
+
+// Cambio de enlace activo
+$(window).on('scroll', function() {
+  $('section').each(function() {
+      if($(window).scrollTop() >= $(this).offset().top - 50) {
+          var id = $(this).attr('id');
+          $('nav a').removeClass('active');
+          $('nav').find('a[href="#' + id + '"]').addClass('active');
+      }
+  });
 });
 

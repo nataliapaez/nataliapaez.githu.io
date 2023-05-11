@@ -39,6 +39,15 @@ nav a {
 	color: #4CAF50;
 }
 
+.tips-section {
+	margin: 40px;
+}
+
+.tips-section h2 {
+	color: #4CAF50;
+	text-align: center;
+}
+
 .animal-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -175,12 +184,12 @@ button:hover {
 
 
 .hero {
-	position: relative; /* to make sure the overlay is positioned relative to this container */
-	height: 400px; /* adjust the height as needed */
+	position: relative; /* para asegurarse de que la superposición esté posicionada en relación con este contenedor */
+	height: 400px; /* ajustar la altura según sea necesario*/
 	background-image: url('https://static.fundacion-affinity.org/cdn/farfuture/wfzHUAPksUOWePuvajegv_W_DwdxDophyz5qyiV1EiY/mtime:1528830294/sites/default/files/la-adopcion-una-nueva-oportunidad-a-las-mascotas-abandonadas.jpg');
 	background-size: cover;
-	background-size: cover; /* to cover the whole container with the background image */
-	background-position: center; /* to center the background image */
+	background-size: cover; /* para cubrir todo el contenedor con la imagen de fondo */
+	background-position: center; /* para centrar la imagen de fondo */
   }
   
   .hero-overlay {
@@ -189,36 +198,34 @@ button:hover {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.5); /* semi-transparent black */
+	background-color: rgba(0,0,0,0.5); /* negro semitransparente */
   }
   
   .hero-content {
 	position: absolute;
-	top: 50%; /* to center the content vertically */
-	left: 50%; /* to center the content horizontally */
-	transform: translate(-50%, -50%); /* to center the content both horizontally and vertically */
-	text-align: center; /* to center the text */
-	color: #fff; /* to make the text white */
+	top: 50%; /* para centrar el contenido verticalmente*/
+	left: 50%; /* para centrar el contenido horizontalmente*/
+	transform: translate(-50%, -50%); /* 
+	para centrar el contenido tanto horizontal como verticalmente*/
+	text-align: center; /* para centrar el texto */
+	color: #fff; /* para hacer el texto blanco */
   }
   
   .hero-content h1 {
-	font-size: 3rem; /* adjust the font size as needed */
-	font-weight: bold; /* to make the title bold */
+	font-size: 3rem; /* 
+	ajustar el tamaño de fuente según sea necesario*/
+	font-weight: bold; /*poner el título en negrita */
   }
   
   .hero-content h2 {
-	font-size: 2rem; /* adjust the font size as needed */
-	font-weight: normal; /* to make the subtitle normal weight */
-	margin-top: 1rem; /* add some margin between the title and subtitle */
+	font-size: 2rem; /* ajustar el tamaño de fuente según sea necesario */
+	font-weight: normal; /* para que el subtitulo tenga un peso normal*/
+	margin-top: 1rem; /* 
+	agregar un margen entre el título y el subtítulo */
   }
 
 
-
-
-
-
-
-/* Adoption form button styles */
+/* Estilos de botón de formulario de adopción */
 .adoption-button {
 	position: fixed;
 	bottom: 20px;
@@ -235,7 +242,8 @@ button:hover {
 	border-radius: 5px;
   }
   
-  /* Adoption form overlay styles */
+  /* 
+Estilos de superposición de formulario de adopción */
   .adoption-overlay {
 	display: none;
 	position: fixed;
@@ -291,7 +299,7 @@ button:hover {
 	border-radius: 5px;
 	border: none;
 	margin-top: 5px;
-	background-color: #eaf2e3; /* light green */
+	background-color: #eaf2e3; 
 	color: #333;
   }
   
@@ -300,12 +308,12 @@ button:hover {
 	border-radius: 5px;
 	border: none;
 	margin-top: 5px;
-	background-color: #eaf2e3; /* light green */
+	background-color: #eaf2e3; 
 	color: #333;
   }
   
   button[type="submit"] {
-	background-color: #68b36b; /* dark green */
+	background-color: #68b36b; 
 	border: none;
 	color: white;
 	padding: 12px 24px;
@@ -316,7 +324,7 @@ button:hover {
   }
   
   button[type="submit"]:hover {
-	background-color: #5ba462; /* slightly lighter green */
+	background-color: #5ba462; 
   }
 
 
@@ -415,6 +423,105 @@ button:hover {
   }
 
 
+  .tip-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+  }
+
+  .tip {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 30px;
+	border: 1px solid #2ecc71;
+	border-radius: 10px;
+	padding: 20px;
+	width: 80%;
+  }
+
+  .tip-image {
+	width: 30%;
+	margin-right: 20px;
+  }
+
+  .tip-image img {
+	width: 100%;
+	border-radius: 5px;
+  }
+
+  .tip-info {
+	width: 70%;
+  }
+
+  .tip-title {
+	color: #2ecc71;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+
+  .tip-description {
+	color: #666;
+	font-size: 0.90rem;
+	line-height: 1.5;
+  }
+
+  .tip-description p {
+	margin-bottom: 10px;
+  }
   
 
+
+  form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  div {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  label {
+	font-size: 18px;
+	font-weight: bold;
+	color: green;
+	margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+	padding: 10px;
+	border: 2px solid green;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 300px;
+	margin-top: 5px;
+  }
+  
+  select {
+	padding: 10px;
+	border: 2px solid green;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 300px;
+	margin-top: 5px;
+  }
+  
+  button[type="submit"] {
+	background-color: green;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+  }
   
